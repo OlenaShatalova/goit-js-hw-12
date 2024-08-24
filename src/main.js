@@ -53,6 +53,8 @@ const onSearchFormSubmit = async event => {
 
       galleryEl.innerHTML = '';
       searchFormEl.reset();
+      loader.classList.add('is-hidden');
+      loadMoreBtn.classList.add('is-hidden');
 
       return;
     }
@@ -73,6 +75,9 @@ const onSearchFormSubmit = async event => {
 
       galleryEl.innerHTML = '';
       searchFormEl.reset();
+
+      loader.classList.add('is-hidden');
+      loadMoreBtn.classList.add('is-hidden');
 
       return;
     }
